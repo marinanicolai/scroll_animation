@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
 }
 
@@ -27,11 +27,16 @@ h1 {
     align-items: center;
     justify-content: center;
     width: 400px;
-    height:200px;
+    height:400px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
     transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
 }
 
 .box.show {
